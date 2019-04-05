@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto</title>
+  </head>
+  <body>
+
+    <h1>Cadastre um Produto</h1>
+
+    <form method="get" action="cadastrar_prod.html">
+
+
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" placeholder="Nome do Produto" id="nome">
+
+		<label for="peso">Peso</label>
+		<input type="text" name="peso" placeholder="peso">
+
+		<label for="medida">Unidade de Medida</label>
+		<input type="text" name="medida">
+
+		<label for="valor">Valor</label>
+		<input type="text" name="valor" placeholder="Valor do Produto">
+
+		<label for="estoque">Estoque Inicial</label>
+		<input type="number" name="estoque">
+
+		<br>
+
+		<label>Mercado</label>
+		<input type="radio" id="interno" name="mercado" value="I">
+		<label for="interno">Interno</label>
+		<input type="radio" id="externo" name="mercado" value="E">
+		<label for="externo">Externo</label>
+		<input type="radio" id="ambos" name="mercado" value="A">
+		<label for="ambos">Ambos</label>
+
+		<br>
+
+		<label for="forne">Fornecedor</label>
+		<select name="forne">
+			<option value="0">(Selecione)</option>
+			<option value="1">Fornecedor 1</option>
+			<option value="2">Fornecedor 2</option>
+			<option value="3">Fornecedor 3</option>
+			<option value="4">Fornecedor 4</option>
+		</select>
+
+		<br>
+		<br>
+
+		<input type="submit" value="Cadastrar" name="cadastro">
+		<input type="reset" value="Limpar">
+
+    </form>
+	<a href="01-introducao.html">Voltar</a>
+
+  </body>
+</html>
