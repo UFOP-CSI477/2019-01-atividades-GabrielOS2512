@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vender</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <h1>Vender</h1>
+
+    <form method="get" action="cadastrar_prod.html">
+
+      <div class="textos">
+    		<label for="nome">Nome do Cliente : </label>
+    		<input type="text" name="nome" placeholder="Nome do Cliente" id="nome">
+        </div>
+        <div class="textos">
+        <label for="endereco">Endereço :</label>
+    		<input type="text" name="endereco" placeholder="Endereço" id="endereco">
+        </div>
+        <div class="textos">
+        <label for="fone">Telefone : </label>
+    		<input type="text" name="fone" placeholder="Telefone" id="fone">
+      </div>
+      <div class="textos">
+		<label for="prod">Produto : </label>
+		<select name="prod">
+			<option value="0">(Selecione)</option>
+			<option value="1">Frango</option>
+			<option value="2">Alcatra</option>
+			<option value="3">Lombo</option>
+      <option value="4">Salsicha</option>
+      <option value="5">Picanha</option>
+      <option value="6">Pernil</option>
+      <option value="7">Acém</option>
+      <option value="8">Chã de Dentro</option>
+      <option value="9">Calabresa</option>
+      <option value="10">Filet Mignon</option>
+		</select>
+  </div>
+    <div class="textos">
+		<label>Pagamento : </label>
+		<input type="radio" id="din" name="pagamento" value="DIN">
+		<label for="interno">Dinheiro</label>
+		<input type="radio" id="cred" name="pagamento" value="CRE">
+		<label for="externo">Crédito</label>
+    <input type="radio" id="deb" name="pagamento" value="DEB">
+    <label for="externo">Débito</label>
+  </div>
+  <input class="btn" type="submit" value="Confirmar" name="confirmar">
+  <input class="btn" type="reset" value="Limpar">
+  <a class="sair" href="principal.html">Voltar</a>
+    </form>
+
+  </body>
+</html>

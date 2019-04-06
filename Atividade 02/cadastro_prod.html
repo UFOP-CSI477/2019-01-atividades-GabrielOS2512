@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto</title>
+
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+
+    <h1>Cadastre um Produto</h1>
+
+    <form method="get" action="cadastrar_prod.html">
+
+        <div class="textos">
+      		  <label for="nome">Nome</label>
+      		  <input type="text" name="nome" placeholder="Nome do Produto" id="nome">
+        </div>
+        <div class="textos">
+    		    <label for="peso">Peso</label>
+    		     <input type="text" name="peso" placeholder="Peso">
+        </div>
+        <div class="textos">
+    		    <label for="medida">Unidade de Medida</label>
+    		     <input type="text" name="medida" placeholder="Medida">
+        </div>
+        <div class="textos">
+    		    <label for="valor">Valor</label>
+    		      <input type="text" name="valor" placeholder="Valor do Produto">
+        </div>
+        <div class="textos">
+    		    <label for="estoque">Estoque Inicial</label>
+    		      <input type="number" name="estoque" placeholder="Estoque">
+        </div>
+        <div class="textos">
+      		<label>Mercado</label>
+      		<input type="radio" id="interno" name="mercado" value="I">
+      		<label for="interno">Interno</label>
+      		<input type="radio" id="externo" name="mercado" value="E">
+      		<label for="externo">Externo</label>
+        </div>
+        <div class="textos">
+      		<label for="forne">Fornecedor</label>
+      		<select name="forne">
+      			<option value="0">(Selecione)</option>
+      			<option value="1">Fornecedor 1</option>
+      			<option value="2">Fornecedor 2</option>
+      			<option value="3">Fornecedor 3</option>
+      		</select>
+        </div>
+
+  		<input class="btn" type="submit" value="Cadastrar" name="cadastro">
+  		<input class="btn" type="reset" value="Limpar">
+      <a class="sair" href="principal.html">Voltar</a>
+    </form>
+
+
+  </body>
+</html>

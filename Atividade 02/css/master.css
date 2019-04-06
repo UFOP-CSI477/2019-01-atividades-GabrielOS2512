@@ -1,0 +1,94 @@
+h1,p{
+  font-family: arial;
+  font-size: 300%;
+  font-style: oblique;
+}
+body{
+  background-color: lightblue;
+}
+a, .btn{
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-color: yellow;
+  border-radius: 20px
+}
+a:hover {
+  color:  blue;
+  background-color: yellow;
+}
+a.sair {
+  background-color: red;
+}
+a.sair:hover {
+  background-color: orange;
+  border-color: white;
+  border-radius: 20px
+}
+div.textos{
+  padding: 20px;
+  border: 1px solid blue;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  width: 33%;
+}
+label{
+  font-family: arial;
+  font-size: 110%;
+  font-weight:bold;
+}
+/* Tabelas */
+
+table{
+  width: 100%;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 10px;
+}
+
+tbody tr:hover {
+  background-color: blue;
+  color: white;
+}
+
+thead tr {
+  background-color: red;
+  color: white;
+}
+tr {
+  background-color: white;
+}
+
+thead{
+  font-style: italic;
+}
+
+tfoot tr:hover {
+  background-color: green;
+  color: white;
+}
+
+tbody td:hover{
+  color:yellow;
+  font-family: arial;
+}
+
+tr:nth-child(even) {
+  background-color: pink;
+}
+
+td{
+  font-size: 14pt;
+  font-family: tahoma;
+}
+caption{
+  font-family: arial;
+  font-size: 40px;
+}
