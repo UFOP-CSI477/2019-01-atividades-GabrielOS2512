@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+
+    <h1>Cadastre um Produto</h1>
+
+    <form method="get" action="cadastrar_prod.html">
+
+        <div class="form-group">
+      		  <label for="nome">Nome</label>
+      		  <input type="text" name="nome" placeholder="Nome do Produto" id="nome" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+    		    <label for="peso">Peso</label>
+    		     <input type="text" name="peso" placeholder="Peso" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+    		    <label for="medida">Unidade de Medida</label>
+    		     <input type="text" name="medida" placeholder="Unidade de Medida" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+    		    <label for="valor">Valor</label>
+    		      <input type="text" name="valor" placeholder="Valor do Produto" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+    		    <label for="estoque">Estoque Inicial</label>
+    		      <input type="number" name="estoque" placeholder="Estoque Inicial" class="form-control form-control-lg">
+        </div>
+
+        <div class="form-group">
+      		<label>Mercado</label>
+          <div class="form-group form-check">
+      		  <input type="radio" id="interno" name="mercado" value="I">
+      		  <label for="interno">Interno</label>
+          </div>
+          <div class="form-group form-check">
+      		    <input type="radio" id="externo" name="mercado" value="E">
+      		    <label for="externo">Externo</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+      		<label for="forne">Fornecedor</label>
+      		<select name="forne" class="custom-select">
+      			<option value="0">(Selecione)</option>
+      			<option value="1">Fornecedor 1</option>
+      			<option value="2">Fornecedor 2</option>
+      			<option value="3">Fornecedor 3</option>
+      		</select>
+        </div>
+
+        <input class="btn btn-success" type="submit" value="Confirmar" name="confirmar">
+        <input class="btn btn-warning" type="reset" value="Limpar">
+        <a class="btn btn-danger" href="principal.html">Voltar</a>
+    </form>
+
+
+  </body>
+</html>
