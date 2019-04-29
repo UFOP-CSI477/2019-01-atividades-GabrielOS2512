@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Produto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <h1>Cadastre um Produto</h1>
+
+    <form method="get" name="formulario1" action="cadastrar_prod.html">
+
+        <div class="form-group">
+      		  <label for="nome1">Nome</label>
+      		  <input type="text" name="nome1" placeholder="Nome do Produto" class="form-control form-control-lg">
+            <p id="prod1" style="display:none; color:red">Campo Obrigatório</p>
+        </div>
+        <div class="form-group">
+    		    <label for="peso">Peso</label>
+    		     <input type="text" name="peso" placeholder="Peso" class="form-control form-control-lg">
+             <p id="prod2" style="display:none; color:red">Campo Obrigatório</p>
+             <p id="prod2a" style="display:none; color:red">Insira apenas números</p>
+        </div>
+        <div class="form-group">
+    		    <label for="medida">Unidade de Medida</label>
+    		     <input type="text" name="medida" placeholder="Unidade de Medida" class="form-control form-control-lg">
+             <p id="prod3" style="display:none; color:red">Campo Obrigatório</p>
+        </div>
+        <div class="form-group">
+    		    <label for="valor">Valor</label>
+    		      <input type="text" name="valor" placeholder="Valor do Produto" class="form-control form-control-lg">
+              <p id="prod4" style="display:none; color:red">Campo Obrigatório</p>
+              <p id="prod4a" style="display:none; color:red">Insira apenas números</p>
+        </div>
+        <div class="form-group">
+    		    <label for="estoque">Estoque Inicial</label>
+    		      <input type="number" name="estoque" placeholder="Estoque Inicial" class="form-control form-control-lg">
+              <p id="prod5" style="display:none; color:red">Campo Obrigatório</p>
+        </div>
+
+        <div class="form-group">
+      		<label>Mercado</label>
+          <div class="form-group form-check">
+      		  <input type="radio" id="interno" name="mercado" value="I" checked>
+      		  <label for="interno">Interno</label>
+          </div>
+          <div class="form-group form-check">
+      		    <input type="radio" id="externo" name="mercado" value="E">
+      		    <label for="externo">Externo</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+      		<label for="forne">Fornecedor</label>
+      		<select name="forne" class="custom-select">
+      			<option value="0">(Selecione)</option>
+      			<option value="1">Fornecedor 1</option>
+      			<option value="2">Fornecedor 2</option>
+      			<option value="3">Fornecedor 3</option>
+      		</select>
+          <p id="prod6" style="display:none; color:red">Selecione uma das opções válidas</p>
+        </div>
+
+        <button class="btn btn-success" type="button" onclick="validar()" name="button">Confirmar</button>
+        <input class="btn btn-warning" type="reset" value="Limpar">
+        <a class="btn btn-danger" href="principal.html">Voltar</a>
+    </form>
+
+    <script src="formulario.js"></script>
+  </body>
+</html>

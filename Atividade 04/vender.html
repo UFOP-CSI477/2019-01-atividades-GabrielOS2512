@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vender</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <h1>Vender</h1>
+
+    <form method="post" name="formulario" action="sucesso.html">
+
+        <div class="form-group">
+    		  <label for="nome">Nome do Cliente : </label>
+    		  <input type="text" name="nome2" placeholder="Nome do Cliente" class="form-control form-control-lg">
+          <p id="venda1" style="display:none; color:red">Campo Obrigatório</p>
+        </div>
+        <div class="form-group">
+          <label for="endereco">Endereço :</label>
+    		  <input type="text" name="endereco2" placeholder="Endereço" class="form-control form-control-lg">
+          <p id="venda2" style="display:none; color:red">Campo Obrigatório</p>
+        </div>
+        <div class="form-group">
+          <label for="fone">Telefone : </label>
+    		  <input type="text" name="fone2" placeholder="Telefone" class="form-control form-control-lg">
+          <p id="venda3" style="display:none; color:red">Campo Obrigatório</p>
+          <p id="venda3a" style="display:none; color:red">Insira somente números</p>
+        </div>
+
+      <div class="form-group">
+		    <label for="prod">Produto : </label>
+		    <select name="prod" class="custom-select">
+    			<option value="0">(Selecione)</option>
+    			<option value="1">Frango</option>
+    			<option value="2">Alcatra</option>
+    			<option value="3">Lombo</option>
+          <option value="4">Salsicha</option>
+          <option value="5">Picanha</option>
+          <option value="6">Pernil</option>
+          <option value="7">Acém</option>
+          <option value="8">Chã de Dentro</option>
+          <option value="9">Calabresa</option>
+          <option value="10">Filet Mignon</option>
+		    </select>
+          <p id="venda4" style="display:none; color:red">Selecione uma opção válida</p>
+      </div>
+
+    <div class="form-group">
+  		<label>Forma de Pagamento : </label>
+      <div class="form-group form-check">
+  		  <input type="radio" id="din" name="pagamento" value="DIN" checked>
+  		  <label for="interno">Dinheiro</label>
+      </div>
+      <div class="form-group form-check">
+  	     <input type="radio" id="cred" name="pagamento" value="CRE">
+  		   <label for="externo">Crédito</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="radio" id="deb" name="pagamento" value="DEB">
+        <label for="externo">Débito</label>
+      </div>
+    </div>
+
+    <button class="btn btn-success" type="button" onclick="vender()" name="button">Confirmar</button>
+    <input class="btn btn-warning" type="reset" value="Limpar">
+    <a class="btn btn-danger" href="principal.html">Voltar</a>
+
+    </form>
+
+    <script src="formulario.js"></script>
+
+  </body>
+</html>
