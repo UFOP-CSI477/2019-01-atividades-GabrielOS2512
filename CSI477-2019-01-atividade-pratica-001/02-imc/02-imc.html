@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IMC</title>
+    <link rel="stylesheet" href="../css/meu.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <a href="#" class="navbar-brand">Atividade 1</a>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="../01-corrida/01-corrida.html" class="nav-link">Corrida</a>
+          </li>
+          <li class="nav-item">
+            <a href="02-imc.html" class="nav-link active">IMC</a>
+          </li>
+          <li class="nav-item">
+            <a href="../03-escala/03-escala.html" class="nav-link">Escala</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="jumbotron">Calculo de IMC</h1>
+
+    <form name="dados" class="form-group imc">
+      <div class="separar">
+        <label for="peso" id="labelv1"><h4>Peso</h4></label>
+        <input type="text" name="peso" class="form-control form-control-md" placeholder="Insira seu Peso">
+        <div id="alerta1" style="display: none" class="alert alert-danger" >
+          <span>Preencha o peso corretamente!<span>
+        </div><br>
+        <label for="altura" id="labelv2"><h4>Altura</h4></label>
+        <input type="text" name="altura" class="form-control form-control-md" placeholder="Insira sua Altura">
+        <div id="alerta2" style="display: none" class="alert alert-danger" >
+          <span>Preencha a altura corretamente!<span>
+        </div><br>
+        <button class="meubtn"type="button" name="button" onclick="calcularimc()">Calcular</button><br>
+      </div><br>
+      <div class="separar" id="resultados_imc" style="display:none;">
+        <label for="resultado"><h4>Seu IMC é</h4></label><br>
+        <input class="meutxt" type="text" name="resultado"><br><br>
+        <label for="resultado"><h4>Sua classificação é</h4></label><br>
+        <input class="meutxt" type="text" name="classificacao" id="imc_r"><br><br>
+        <label for="resultado"><h4>Seu Peso ideal está entre</h4></label><br>
+        <input class="meutxt" type="text" name="ideal1"> e <input class="meutxt" type="text" name="ideal2">
+      </div>
+    </form>
+
+
+    <script src="form.js"></script>
+
+  </body>
+</html>
